@@ -1,0 +1,23 @@
+.body_bottom{
+    width: 1104;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 24px;
+
+    &_tittle{
+        height: 18px;
+        font-size: 24px;
+        color: rgba(7, 20, 53, 1);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    &_text{
+        height: 168px;
+        line-height: 28px;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(7, 20, 53, 1);
+    }
+}

@@ -1,0 +1,82 @@
+.navbar {
+    &_left {
+        min-width: 1600px;
+        height: 80px;
+        padding: 16px 24px 16px 24px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+    &_input {
+        width: 731px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid rgb(213, 208, 208);
+        padding: 8px 12px 8px 12px;
+        outline: none;
+    }
+    &_logo {
+        width: 144px;
+        font-size: 32px;
+        font-weight: bold;
+        color: rgba(23, 29, 69, 1);
+    }
+}
+
+.fa-joomla {
+    color: rgba(21, 81, 229, 1);
+}
+.btn {
+    width: 128px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px, 24px, 12px, 24px;
+    display: flex;
+    gap: 12px;
+    text-align: center;
+    line-height: 14px;
+    background-color: rgba(21, 81, 229, 1);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.fa-bell {
+    width: 32px;
+    height: 32px;
+    color: blue;
+    font-size: 32px;
+}
+.fa-grip-lines-vertical {
+    font-size: 48px;
+    color: rgb(213, 208, 208);
+}
+.heart {
+    font-size: 32px;
+    color: rgb(148, 141, 141);
+}
+.navbar_btn {
+    width: 148px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    color: blue;
+    font-size: 18px;
+    align-items: center;
+    border: none;
+    gap: 12px;
+}
+.frame_user {
+    width: 163px;
+    height: 32px;
+    display: flex;
+    gap: 16px;
+}
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(7, 20, 53, 1);
+}
