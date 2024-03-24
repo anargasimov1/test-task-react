@@ -13,7 +13,7 @@ function Header() {
                 <i class="fa-regular fa-heart heart"></i>
                 <button className='navbar_btn' type='button'><i class="fa-solid fa-cart-shopping"></i> 144 235<i class="fa-solid fa-ruble-sign"></i></button>
                 <div className='frame_user'>
-                    <p>Ермаков Е.</p>
+                    <p> <img src={require('../images/IMG-20240113-WA0025 (1).jpg')} alt="" /> Ермаков Е.</p>
                 </div>
             </div>
             <Navbar/>
