@@ -4,12 +4,20 @@ import './Body_rigth.scss';
 
 function Body_rigth() {
 
-const [count, setCount] = useState(false);
+    const [toggle, setToggle] = useState(false);
+    const [count, setCount] = useState(1);
 
-function toggle(){
-    setCount(true)
-}
-console.log(count)
+    const modal = () => setToggle(true)
+
+
+    function countMinus() {
+        if (count >= 1)
+            setCount(count - 1)
+        if (count <= 1)
+            setToggle(false)
+        if (count == 1)
+            setCount(1)
+    }
 
 
     return (
@@ -48,7 +56,14 @@ console.log(count)
                             </div>
 
                             <div className="frame_4">
-                                <button className='to_sale' onClick={toggle} type='button'><i className="fa-solid fa-cart-shopping"></i> в корзину</button>
+                                <div style={{ display: toggle ? "flex" : "none" }} className='new_btn'>
+                                    <button onClick={countMinus} type='button'><i class="fa-solid fa-minus"></i></button>
+                                    {
+                                        count
+                                    }
+                                    <button onClick={() => setCount(count + 1)} type='button'><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <button style={{ display: toggle ? "none" : "block" }} className='to_sale' onClick={modal} type='button'><i className="fa-solid fa-cart-shopping"></i> в корзину</button>
                                 <p className='icon'><i className="fa-regular fa-heart"></i></p>
                             </div>
                         </div>
@@ -59,48 +74,48 @@ console.log(count)
 
                             <div className="rigth_next_frame_1">
                                 <div className="rigth_next_frame_1_1">
-                                    <p>ELC00696</p>
-                                    <p>Код поставщика</p>
+                                    <h3>ELC00696</h3>
+                                    <p className='article'>Код поставщика</p>
                                 </div>
                                 <div className="rigth_next_frame_1_2">
-                                    <p>ELC0200000696</p>
-                                    <p>Артикул</p>
+                                    <h3>ELC0200000696</h3>
+                                    <p className='article'>Артикул</p>
                                 </div>
                             </div>
 
                             <div className="rigth_next_frame_2">
                                 <div className="rigth_next_frame_2_1">
-                                    <p>Electric used</p>
-                                    <p>Бренд</p>
+                                    <h3>Electric used</h3>
+                                    <p className='article'>Бренд</p>
                                 </div>
                                 <div className="rigth_next_frame_2_2">
-                                    <p>ELC00696</p>
-                                    <p>Код ЕТМ</p>
+                                    <h3>ELC00696</h3>
+                                    <p className='article'>Код ЕТМ</p>
                                 </div>
                             </div>
 
                             <div className="rigth_next_frame_3">
                                 <div className="rigth_next_frame_3_1">
-                                    <p>Electric used</p>
-                                    <p>Бренд</p>
+                                    <h3>Electric used</h3>
+                                    <p className='article'>Бренд</p>
                                 </div>
                                 <div className="rigth_next_frame_3_2">
-                                    <p>ELC00696</p>
-                                    <p>Серия</p>
+                                    <h3>ELC00696</h3>
+                                    <p className='article'>Серия</p>
                                 </div>
                             </div>
 
                             <div className="rigth_next_frame_4">
                                 <div className="rigth_next_frame_4_1">
-                                    <p>ELC0200000696</p>
-                                    <p>Код производителя</p>
+                                    <h3>ELC0200000696</h3>
+                                    <p className='article'>Код производителя</p>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <Body_buttom/>
+                <Body_buttom />
             </div>
         </>
 
